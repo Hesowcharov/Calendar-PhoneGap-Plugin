@@ -87,7 +87,7 @@
 - (EKRecurrenceFrequency) toEKRecurrenceFrequency:(NSString*) recurrence {
   if ([recurrence isEqualToString:@"daily"]) {
     return EKRecurrenceFrequencyDaily;
-  } else if ([recurrence isEqualToString:@"weekly"]) {
+  } else if ([recurrence containsString:@"weekly"]) {
     return EKRecurrenceFrequencyWeekly;
   } else if ([recurrence isEqualToString:@"monthly"]) {
     return EKRecurrenceFrequencyMonthly;
